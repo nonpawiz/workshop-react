@@ -1,0 +1,11 @@
+# https://github.com/ishaqadhel/docker-laravel-mysql-nginx-starter.git
+
+# setup backend
+docker-compose build
+docker-compose up -d
+composer install
+docker exec -it php /bin/sh
+chmod -R 777 storage
+php artisan key:generate
+
+# docker exec -it <containerId> bash

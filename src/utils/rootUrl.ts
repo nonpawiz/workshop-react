@@ -1,0 +1,1 @@
+export const rootUrl: string = import.meta.env.VITE_ROOT_URL;
